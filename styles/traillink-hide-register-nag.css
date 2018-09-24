@@ -1,0 +1,8 @@
+/* hide overlay nags */
+.reveal-overlay {
+    display: none !important;    
+}
+
+#registerModal {
+    display: none !important;    
+}
