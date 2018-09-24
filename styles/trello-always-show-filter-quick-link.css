@@ -1,0 +1,19 @@
+/* Make the Filter quick link omni-present */
+
+/* undo hiding for filter main anchor element when it's "hide" class is enabled */
+.js-filter-cards-indicator.hide { 
+    display: unset !important;
+    /* background: rgb(0,0,0) !important;
+    opacity: 0.25 !important; */
+    background: transparent !important;
+}
+
+/* Then, hide "filtering is on" text while filter is not enabled */
+.js-filter-cards-indicator.hide > .u-text-underline { 
+    display: none !important;   
+}
+
+/* And also hide close filter button icon  filter is not enabled */
+.js-filter-cards-indicator.hide > .js-filter-card-clear { 
+    display: none !important;   
+}
