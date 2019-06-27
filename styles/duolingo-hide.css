@@ -1,0 +1,41 @@
+/* # = id, . = class */
+/* multi-select examples :
+   *[id*='term-'] {color:red; }
+   div[class*='tocolor-'] {color:red; }
+
+  child select example :
+  .someclass > .child class > div > h1 {color:red; } */
+
+
+  /* Hide timed practice button */
+  /* no longer works */ /* #start-button { display:none !important;}   */
+  /* [data-test=\"player-next\"] { display:none !important;}  */
+  /* too broad */ /* ._1lLTA button:nth-child(2) { display:none !important;}  */
+    /* selects next button after non-timed practice button */
+    [data-test=\"secondary-button\"] + button { display:none !important;}
+
+  /* Hide progress indicators */
+  ._26Rsw { display:none !important;}
+  ._3exN9 { display:none !important;}
+  .progress-bar-dynamic { display:none !important;}
+  .challenge-num { display:none !important;}
+  .practice-intro-screen > .speech-bubble > .inner > h2 { display:none !important;}
+
+/* Side nags */
+  ._1bv61 {opacity:0.02;}
+  ._2WZQR {opacity:0.02;}
+  ._2ANgP {opacity:0.00;}
+
+
+/* Side nag */
+._2x-xe {display:none !important;}
+._1qGhj  {display:none !important;}
+
+/* Top nag */
+._22Tn4 {display:none !important;}
+._2Q3-3 {display:none !important;}
+
+/* Interstitial Nags */
+.iGrVB  {display:none !important;}
+/* ._1AbdB  {display:none !important;} */
+/* This is the popup feedback dialog: ReactModal__Overlay ReactModal__Overlay--after-open BKNBq _1CJpK _1AbdB */
