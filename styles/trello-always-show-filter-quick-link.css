@@ -22,7 +22,7 @@
     content:'\00a0\00a0\00a0'; /*&nbsp's to set the width*/
     visibility: visible;
     padding: 5px;
-
+    opacity: 0.6 !important;
     background-repeat:no-repeat;
     background-position: center center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAABcElEQVQ4y62UzyvDYRzH3893X8pkYweZHMRhttyUEskfsMVB7Kb8BQ4u80/sopTLQnKQtJIfBxKaHyWL0xycODhISdSol8PWbLPvTHme0/P+vN/P59P7+Xweg1c+GdW20JPhTq1/EDzaWtKcktrS2y9kt8Ia1bLwsswDo7TQUGU3E+aeNbyS6OSQM/qpc6zEpo8UJ3TljhYDXJIkhFWRbtHDBmmGCnHqGeeahfwN5YJO5rkhSn0x2MQMaWL4f9D9xLhiFk95oI04KabxlaDNTJEiTnul1EFW2GOMxgLiJsIuqwSd3Bhkiw1Gcn5hM8w62wxT9LClvpwroRZNKiBJCmhSPiV0anAQmE/t6Ugh5UoIqVfH2jEfxZwy582rMsrKnW+GrDLmtZRhVekeI4ly0NIf178Lai8JS3alwbIr58WjdnXLpWwtAksdimpCXTrQ7e9jG+WCZ+7ZJPLdVdUyvOhZ+1rUsXmv7WMw1OFyjn8BvFG2F0BhwNkAAAAASUVORK5CYII=);
