@@ -1,143 +1,98 @@
 [
-	{
-		"installDate": 1533576013970,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "seattletimes.com",
-		"sections": [
-			{
-				"code": "/* disable blue filter and re-enable scroll bars*/\n#container {\n    filter: none !important;\n    \n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n    \n}\n\n/* hide side add nag */\n#userMessagingOverlay {\n    display: none !important;\n}\n\n\n.global-modal {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\n#userMessagingPostscript {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\n.user-messaging.animate {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\nhtml,body {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"seattletimes.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 1
-	},
-	{
-		"installDate": 1537661592872,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "traillink.com",
-		"sections": [
-			{
-				"code": "\n/* hide overlay nags */\n.reveal-overlay {\n    display: none !important;    \n}\n\n#registerModal {\n    display: none !important;    \n}\n",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"traillink.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 2
-	},
-	{
-		"installDate": 1540082746984,
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"name": "www.amazon.com",
-		"sections": [
-			{
-				"code": "/* Make Amazon a more tolerable place to visit */\n\n/* buy buy buy? */\n#cbcc_content_container {display:none !important;}\n\n/* Top site bar */\n#nav-upnav {display:none !important;}\n\n/* Sponsored search results */\n.amzn-safe-frame-container {display:none !important;}\n\n/* Side touting */\n#sc-rec-right {display:none !important;}\n\n/* Bottom touting */\n#sc-rec-bottom {display:none !important;}\n#rhf {display:none !important;}\n\n/* Checkout touting */\n.adStripe2 {display:none !important;}\n\n/* Move sign-out item up to top of menu instead of hidden at the bottom */\n#nav-item-signout {position: absolute !important; \n                   top: 10px; \n                   right: 10px;}\n\n#nav-item-signout > span {font-size:120% !important;\n                          font-weight:bold !important;\n                          color: #d97d0d !important;\n                          text-decoration-line: underline; }\n",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"www.amazon.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 3
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1540693861484,
-		"name": "wunderground.com",
-		"sections": [
-			{
-				"code": ".pane-wu-fullscreenweather-ad-box-atf {display:none !important;}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"wunderground.com"
-				],
-				"regexps": []
-			}
-		],
-		"id": 4
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1540694587830,
-		"name": "time.graphics",
-		"sections": [
-			{
-				"code": ".commonLoginWindow {display:none !important;}",
-				"urls": [],
-				"urlPrefixes": [],
-				"domains": [
-					"time.graphics"
-				],
-				"regexps": []
-			}
-		],
-		"id": 5
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1546192163730,
-		"name": "connect.garmin.com fix broken calendar sidebar",
-		"sections": [
-			{
-				"code": "/* Fix broken, sidebar for calendar obscured by menu */\n.page .calendar-wrapper.hide-sidebar .calendar-sidebar-nav {\n    margin-left: 0 !important;\n}",
-				"domains": [
-					"connect.garmin.com"
-				]
-			}
-		],
-		"id": 6
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1546885725443,
-		"name": "instagram.com right-click-fix",
-		"sections": [
-			{
-				"code": "/* remove the div that prevents right-click-to-save-image */\n._9AhH0 {display: none !important;}",
-				"domains": [
-					"instagram.com"
-				]
-			}
-		],
-		"id": 7
-	}
+    {
+        "installDate": 1524356930832,
+        "enabled": true,
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "name": "Duolingo Hide",
+        "sections": [
+            {
+                "code": "/* # = id, . = class */\n/* multi-select examples :\n   *[id*='term-'] {color:red; } \n   div[class*='tocolor-'] {color:red; } \n   \n  child select example :\n  .someclass > .child class > div > h1 {color:red; } */\n\n  \n  /* Hide timed practice button */\n  /* no longer works */ /* #start-button { display:none !important;}   */\n  /* [data-test=\\\"player-next\\\"] { display:none !important;}  */\n  /* too broad */ /* ._1lLTA button:nth-child(2) { display:none !important;}  */\n    /* selects next button after non-timed practice button */\n    [data-test=\\\"secondary-button\\\"] + button { display:none !important;}\n  \n  /* Hide progress indicators */\n  ._26Rsw { display:none !important;} \n  ._3exN9 { display:none !important;} \n  .progress-bar-dynamic { display:none !important;} \n  .challenge-num { display:none !important;} \n  .practice-intro-screen > .speech-bubble > .inner > h2 { display:none !important;} \n\n/* Side nags */\n  ._1bv61 {opacity:0.02;}\n  ._2WZQR {opacity:0.02;}\n  ._2ANgP {opacity:0.00;}\n\n\n/* Side nag */\n._2x-xe {display:none !important;}\n._1qGhj {display:none !important;}\n._2SXd7 {display:none !important;}\n._3IjmU {display:none !important;}\n\n/* Top nag */\n._22Tn4 {display:none !important;}\n._2Q3-3 {display:none !important;}\n\n/* Interstitial Nags */\n.iGrVB  {display:none !important;}\n/* ._1AbdB  {display:none !important;} */\n/* This is the popup feedback dialog: ReactModal__Overlay ReactModal__Overlay--after-open BKNBq _1CJpK _1AbdB */\n\n/* Mid-lesson pop-up interruptions */\n._2-JcG {display:none !important;}\n\n\n/* ========= Lesson overview simplification ========= */\n\n/* Simplify lesson layout by removing outer progress rings */\n/* ._3o9cS { opacity: 0; } */\n\n/* Hide crown-level icon background */\n._2PyWM { opacity: 0; }\n\n/* Then replace with simplified flat circle background */\n.qLLbC { /*transform:unset  !important;*/ \n         color: #aaa !important;\n         font-size: 17px  !important;\n   width: 30px;\n   height: 30px;\n   line-height: 30px;\n   background: #dfdfdf; \n   -moz-border-radius: 70px; \n   -webkit-border-radius: 70px; \n   border-radius: 50%;\n   text-align: center;\n}\n\n\n/* Achievment Levels (convert from Colors to \n  one-color gradient, transparent to opaque */\n\n/* De-colorize all icons and apply uniform hue to them (blue-ish) */\n._2XOlO { filter: sepia(80%) hue-rotate(180deg);} \n\n/* for green: hue-rotate(-90deg) */\n/* Level 1 & 5-special 1-yellow gradient */\n.ewiWc { background: #0e96f0f0 !important; filter: grayscale(0%);}\n/* Level 4-orange */\n._29-ng { background: #0ebbf0e3 !important; filter: grayscale(0%);}\n/* Level 3-red */\n._5Wv6B { background: #20a2ffb0 !important; filter: grayscale(30%);}\n/* Level 2-green */\n._2fttc { background: #a3d9f9 !important; filter: grayscale(10%);}\n/* Level 1-blue */\n._3Mnmm { background: #dadfe1 !important; filter: grayscale(100%); }\n\n",
+                "domains": [
+                    "duolingo.com"
+                ]
+            }
+        ],
+        "id": 1
+    },
+    {
+        "installDate": 1512748293878,
+        "enabled": true,
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "name": "Map My Run",
+        "sections": [
+            {
+                "code": "/* # = id, . = class */\n/* multi-select examples :\n   *[id*='term-'] {color:red; } \n   div[class*='tocolor-'] {color:red; } */\n \n /* remove top ad region */\n div[id*='ad_']                     { display: none !important; }\n a[class*='partner_']               { display: none !important; }\n div[id*='beacon_']                 { display: none !important; }\n #site_run > .container             { display: none !important; }\n \n /* fix drop down mega gap created by hiding top region */\n #header_subnav                     { top: auto!important; }\n \n /* move feedback side tab down and make it mostly transparent */\n #fdbk_tab                          { top    : 80% !important; \n                                      opacity: 0.10; }\n\n /* remove background ads */\n #page_content                       { background:none !important; }\n a[id*='background_ad_clickable_']   { display: none   !important;}\n\n/* move workout icon so it doesn't obscure user icon */\n img.workout_thumb { position: relative !important; }\n\n/* remove timed pop-over notices */\n#mvp_tout                            { display:none !important;}\n#upsell_shim_upsell_tout             { display:none !important;}\n#tout_1                              { display:none !important;}\n#tout_5                              { display:none !important;}\n#mvp_charts_upsell_body              { display:none !important;}\n.upsell_mvp                          { display:none !important;}\n.ui-dialog-wrapper                   { display:none !important;}\n.ui-widget-overlay                   { display:none !important;}\n\nheader#site_header                   { margin-top: 0px !important; }\n\n/* ================ 2011 OLD EDITS ================ */\n\n/* remove top ad region, enable hidden non-ad version */\n/* .mmf_modal_gray_btm    { display: none !important; }\n   .mmf_modal_premium_btm { display: inline !important; }\n   #mmf_logo              { display: none !important; }\n   #site_header           { display: none !important; } */\n\n/* now expand map to full height */\n/* #route_engine_container_modal  { height: 90% !important } */\n\n/* hide toolbox add content */\n/* #ad_300x250map        { display: none !important; }\n   #ad_banner            { display: none !important; }\n   .expand_right_content { width: auto !important; }\n   .right_tools          { width: 100px !important; } */\n\n/* Use \\\":not\\\" selector to exclude sidead_fixed from the wildcart match \n   which the My Routes content is nested under */\n/* div[id*='ad_']:not(#sidead_fixed) { border display: none !important; }\n   div[id*='beacon_'] { display: none !important; } */",
+                "urls": [],
+                "urlPrefixes": [],
+                "domains": [
+                    "mapmyrun.com"
+                ],
+                "regexps": []
+            }
+        ],
+        "id": 2
+    },
+    {
+        "installDate": 1533571460010,
+        "enabled": true,
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "name": "spanishdict.com hide advertising beg",
+        "sections": [
+            {
+                "code": ".js-whitelist-sidebar {display:none !important;}\n.js-whitelist-header {display:none !important;}\n/* #whitelist-header-template {display:none !important;} */\n\n/* Add some space in above removed ad nag content */\n.fluencia-sidebar-short {margin-top:20px !important; }\n.main-container {padding-top:20px !important; }\n\n",
+                "urls": [],
+                "urlPrefixes": [],
+                "domains": [
+                    "spanishdict.com"
+                ],
+                "regexps": []
+            }
+        ],
+        "id": 3
+    },
+    {
+        "installDate": 1537804414736,
+        "enabled": true,
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "name": "Trello - always show filter shortcut icon",
+        "sections": [
+            {
+                "code": "/* Make the Filter quick link omni-present */\n\n\n/* undo hiding for filter main anchor element when it's \"hide\" class is enabled */\n/*.js-filter-cards-indicator.hide > .u-text-underline {*/\n.js-filter-cards-indicator.hide {\n    display: unset !important;\n    /*background: rgba(0,0,0,.5) !important;\n    opacity: 0.25 !important;*/\n    background: transparent !important;\n}\n\n/* Then, hide \"filtering results\" text while filter is not enabled */\n.js-filter-cards-indicator.hide > .u-text-underline { \n    /*display: none !important; */\n    visibility: hidden;\n    text-decoration: unset;\n}\n/* And add a funnel/filter icon */\n.js-filter-cards-indicator.hide > .u-text-underline:after { \n    /* content: '🔍 Search' !important; */\n    content:'\\00a0\\00a0\\00a0'; /*&nbsp's to set the width*/\n    visibility: visible;\n    padding: 5px;\n    opacity: 0.6 !important;\n    background-repeat:no-repeat;\n    background-position: center center;    \n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAABcElEQVQ4y62UzyvDYRzH3893X8pkYweZHMRhttyUEskfsMVB7Kb8BQ4u80/sopTLQnKQtJIfBxKaHyWL0xycODhISdSol8PWbLPvTHme0/P+vN/P59P7+Xweg1c+GdW20JPhTq1/EDzaWtKcktrS2y9kt8Ia1bLwsswDo7TQUGU3E+aeNbyS6OSQM/qpc6zEpo8UJ3TljhYDXJIkhFWRbtHDBmmGCnHqGeeahfwN5YJO5rkhSn0x2MQMaWL4f9D9xLhiFk95oI04KabxlaDNTJEiTnul1EFW2GOMxgLiJsIuqwSd3Bhkiw1Gcn5hM8w62wxT9LClvpwroRZNKiBJCmhSPiV0anAQmE/t6Ugh5UoIqVfH2jEfxZwy582rMsrKnW+GrDLmtZRhVekeI4ly0NIf178Lai8JS3alwbIr58WjdnXLpWwtAksdimpCXTrQ7e9jG+WCZ+7ZJPLdVdUyvOhZ+1rUsXmv7WMw1OFyjn8BvFG2F0BhwNkAAAAASUVORK5CYII=);\n}\n\n/* And also hide close filter button icon if filter is not enabled */\n.js-filter-cards-indicator.hide > .js-filter-card-clear { \n    display: none !important;   \n}\n",
+                "domains": [
+                    "trello.com"
+                ]
+            }
+        ],
+        "id": 4
+    },
+    {
+        "installDate": 1540140944276,
+        "enabled": false,
+        "updateUrl": null,
+        "md5Url": null,
+        "url": null,
+        "originalMd5": null,
+        "name": "www.duolingo.com",
+        "sections": [
+            {
+                "code": "/* Side nag */\n._2x-xe {display:none !important;}\n._1qGhj  {display:none !important;}\n\n/* Top nag */\n._22Tn4 {display:none !important;}\n._2Q3-3 {display:none !important;}\n\n/* Interstitial Nags */\n.iGrVB  {display:none !important;}\n/* ._1AbdB  {display:none !important;} */\n/* This is the popup feedback dialog: ReactModal__Overlay ReactModal__Overlay--after-open BKNBq _1CJpK _1AbdB */",
+                "domains": [
+                    "www.duolingo.com"
+                ]
+            }
+        ],
+        "id": 5
+    }
 ]
