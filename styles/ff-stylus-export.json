@@ -1,0 +1,59 @@
+[
+	{
+		"installDate": 1524356930832,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Duolingo Hide",
+		"sections": [
+			{
+				"code": "/* # = id, . = class */\n/* multi-select examples :\n   *[id*='term-'] {color:red; } \n   div[class*='tocolor-'] {color:red; } \n   \n  child select example :\n  .someclass > .child class > div > h1 {color:red; } */\n\n  \n  /* Hide timed practice button */\n  /* no longer works */ /* #start-button { display:none !important;}   */\n  /* [data-test=\\\"player-next\\\"] { display:none !important;}  */\n  /* too broad */ /* ._1lLTA button:nth-child(2) { display:none !important;}  */\n    /* selects next button after non-timed practice button */\n    [data-test=\\\"secondary-button\\\"] + button { display:none !important;}\n  \n  /* Hide progress indicators */\n  ._26Rsw { display:none !important;} \n  ._3exN9 { display:none !important;} \n  .progress-bar-dynamic { display:none !important;} \n  .challenge-num { display:none !important;} \n  .practice-intro-screen > .speech-bubble > .inner > h2 { display:none !important;} \n\n/* Buy buy buy top floating nag */\n._1P7ng {display: none;}\n\n/* Side nags */\n._25sFh { display:none !important; visibility:hidden !important; }\n   /* Older ones below */\n  ._1bv61 { display:none !important; visibility:hidden !important; }\n  ._2WZQR { display:none !important; visibility:hidden !important; }\n  ._2ANgP { display:none !important; visibility:hidden !important; }\n\n._2x-xe { display:none !important; visibility:hidden !important;}\n._1qGhj { display:none !important; visibility:hidden !important;}\n._2SXd7 { display:none !important; visibility:hidden !important;}\n._3IjmU { display:none !important; visibility:hidden !important;}\n\n/* Top nag */\n._22Tn4 {display:none !important;}\n._2Q3-3 {display:none !important;}\n\n/* Interstitial Nags */\n.iGrVB  {display:none !important;}\n/* ._1AbdB  {display:none !important;} */\n/* This is the popup feedback dialog: ReactModal__Overlay ReactModal__Overlay--after-open BKNBq _1CJpK _1AbdB */\n\n/* Mid-lesson pop-up interruptions */\n._2-JcG {display:none !important;}\n\n\n/* Move practice icon to top, add background color and rotate from blue to freen */\n._3bahF {bottom: unset !important; \n         top:    100px !important; \n        opacity: 0.65;}\n.oNqWF::after {\n    background-color: #d1efff !important;\n    border-color: #5fc1f7 !important; }\n.oNqWF  { filter:hue-rotate(270deg); } \n\n\n/* ========= Lesson overview simplification ========= */\n\n/* Simplify lesson layout by removing outer progress rings */\n/* ._3o9cS { opacity: 0; } */\n\n/* Hide crown-level icon background */\n._2PyWM { opacity: 0; }\n\n/* Then replace with simplified flat circle background */\n.qLLbC { /*transform:unset  !important;*/ \n         color: #aaa !important;\n         font-size: 17px  !important;\n   width: 30px;\n   height: 30px;\n   line-height: 30px;\n   background: #dfdfdf; \n   -moz-border-radius: 70px; \n   -webkit-border-radius: 70px; \n   border-radius: 50%;\n   text-align: center;\n}\n\n\n/* Achievment Levels (convert from Colors to \n  one-color gradient, transparent to opaque */\n\n/* De-colorize all icons and apply uniform hue to them (blue-ish) */\n._2XOlO { filter: sepia(80%) hue-rotate(180deg);} \n\n/* for green: hue-rotate(-90deg) */\n/* Level 1 & 5-special 1-yellow gradient */\n.ewiWc { background: #0e96f0f0 !important; filter: grayscale(0%);}\n/* Level 4-orange */\n._29-ng { background: #0ebbf0e3 !important; filter: grayscale(0%);}\n/* Level 3-red */\n._5Wv6B { background: #20a2ffb0 !important; filter: grayscale(30%);}\n/* Level 2-green */\n._2fttc { background: #a3d9f9 !important; filter: grayscale(10%);}\n/* Level 1-blue */\n._3Mnmm { background: #dadfe1 !important; filter: grayscale(100%); }\n\n",
+				"domains": [
+					"duolingo.com"
+				]
+			}
+		],
+		"id": 1
+	},
+	{
+		"installDate": 1533571460010,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "spanishdict.com hide advertising beg",
+		"sections": [
+			{
+				"code": ".js-whitelist-sidebar {display:none !important;}\n.js-whitelist-header {display:none !important;}\n/* #whitelist-header-template {display:none !important;} */\n\n/* Add some space in above removed ad nag content */\n.fluencia-sidebar-short {margin-top:20px !important; }\n.main-container {padding-top:20px !important; }\n\n",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"spanishdict.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 3
+	},
+	{
+		"installDate": 1537804414736,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "Trello - always show filter shortcut icon",
+		"sections": [
+			{
+				"code": "/* Make the Filter quick link omni-present */\n\n\n/* undo hiding for filter main anchor element when it's \"hide\" class is enabled */\n/*.js-filter-cards-indicator.hide > .u-text-underline {*/\n.js-filter-cards-indicator.hide {\n    display: unset !important;\n    /*background: rgba(0,0,0,.5) !important;\n    opacity: 0.25 !important;*/\n    background: transparent !important;\n}\n\n/* Then, hide \"filtering results\" text while filter is not enabled */\n.js-filter-cards-indicator.hide > .board-header-btn-text{ \n    /*display: none !important; */\n    visibility: hidden;\n    text-decoration: unset;\n}\n/* And add a funnel/filter icon */\n.js-filter-cards-indicator.hide > .board-header-btn-text:after { \n    /* content: '🔍 Search' !important; */\n    content:'\\00a0\\00a0\\00a0'; /*&nbsp's to set the width*/\n    visibility: visible;\n    padding: 5px;\n    opacity: 0.7 !important;\n    background-repeat:no-repeat;\n    background-position: center center;    \n    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAABcElEQVQ4y62UzyvDYRzH3893X8pkYweZHMRhttyUEskfsMVB7Kb8BQ4u80/sopTLQnKQtJIfBxKaHyWL0xycODhISdSol8PWbLPvTHme0/P+vN/P59P7+Xweg1c+GdW20JPhTq1/EDzaWtKcktrS2y9kt8Ia1bLwsswDo7TQUGU3E+aeNbyS6OSQM/qpc6zEpo8UJ3TljhYDXJIkhFWRbtHDBmmGCnHqGeeahfwN5YJO5rkhSn0x2MQMaWL4f9D9xLhiFk95oI04KabxlaDNTJEiTnul1EFW2GOMxgLiJsIuqwSd3Bhkiw1Gcn5hM8w62wxT9LClvpwroRZNKiBJCmhSPiV0anAQmE/t6Ugh5UoIqVfH2jEfxZwy582rMsrKnW+GrDLmtZRhVekeI4ly0NIf178Lai8JS3alwbIr58WjdnXLpWwtAksdimpCXTrQ7e9jG+WCZ+7ZJPLdVdUyvOhZ+1rUsXmv7WMw1OFyjn8BvFG2F0BhwNkAAAAASUVORK5CYII=);\n}\n\n/* And also hide close filter button icon if filter is not enabled */\n.js-filter-cards-indicator.hide > .js-filter-card-clear { \n    display: none !important;   \n}\n",
+				"domains": [
+					"trello.com"
+				]
+			}
+		],
+		"id": 4
+	}
+]

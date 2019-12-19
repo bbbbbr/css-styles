@@ -1,0 +1,259 @@
+[
+	{
+		"installDate": 1533576013970,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "seattletimes.com",
+		"sections": [
+			{
+				"code": "/* disable blue filter and re-enable scroll bars*/\n#container {\n    filter: none !important;\n    \n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n    \n}\n\n/* hide side add nag */\n#userMessagingOverlay {\n    display: none !important;\n}\n\n\n.global-modal {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\n#userMessagingPostscript {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\n.user-messaging.animate {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n\nhtml,body {\n    overflow: auto !important;\n    overflow-x: auto !important;\n    overflow-y: auto !important;\n}\n",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"seattletimes.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 1
+	},
+	{
+		"installDate": 1537661592872,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "traillink.com",
+		"sections": [
+			{
+				"code": "\n/* hide overlay nags */\n.reveal-overlay {\n    display: none !important;    \n}\n\n#registerModal {\n    display: none !important;    \n}\n",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"traillink.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 2
+	},
+	{
+		"installDate": 1540082746984,
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"name": "www.amazon.com",
+		"sections": [
+			{
+				"code": "/* Make Amazon a more tolerable place to visit */\n\n/* buy buy buy? */\n#cbcc_content_container {display:none !important;}\n\n/* Top site bar */\n#nav-upnav {display:none !important;}\n\n/* Sponsored search results */\n.amzn-safe-frame-container {display:none !important;}\n\n/* Side touting */\n#sc-rec-right {display:none !important;}\n\n/* Bottom touting */\n#sc-rec-bottom {display:none !important;}\n#rhf {display:none !important;}\n\n/* Checkout touting */\n.adStripe2 {display:none !important;}\n\n/* Move sign-out item up to top of menu instead of hidden at the bottom */\n#nav-item-signout {position: absolute !important; \n                   top: 10px; \n                   right: 10px;}\n\n#nav-item-signout > span {font-size:120% !important;\n                          font-weight:bold !important;\n                          color: #d97d0d !important;\n                          text-decoration-line: underline; }\n",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"www.amazon.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 3
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1540693861484,
+		"name": "wunderground.com",
+		"sections": [
+			{
+				"code": ".pane-wu-fullscreenweather-ad-box-atf {display:none !important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"wunderground.com"
+				],
+				"regexps": []
+			}
+		],
+		"id": 4
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1540694587830,
+		"name": "time.graphics",
+		"sections": [
+			{
+				"code": ".commonLoginWindow {display:none !important;}",
+				"urls": [],
+				"urlPrefixes": [],
+				"domains": [
+					"time.graphics"
+				],
+				"regexps": []
+			}
+		],
+		"id": 5
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1546192163730,
+		"name": "connect.garmin.com fix upload (reverse) and calendar sidebar",
+		"sections": [
+			{
+				"code": "/* Fix broken, sidebar for calendar obscured by menu */\n.page .calendar-wrapper.hide-sidebar .calendar-sidebar-nav {\n    margin-left: 0 !important;\n}\n\n/* Move upload button up to top */\n\n#import-data-start {\n    position: absolute;\n        top: 345px;\n        left: 140px;\n}\n\n/* fix non-active button behavior to be less intrusive*/\n.btn[disabled], .btn[disabled]:hover, \n.btn[disabled]:focus, .btn.disabled, \n.btn.disabled:hover, .btn.disabled:focus { \n     opacity:1.0 !important;\n     cursor: auto;\n     filter: grayscale(100%) brightness(150%);\n}\n\n/* Reverse table order so last imported files are up top */\n#dropzone-table {\n    display: -webkit-flex; /* Safari */\n    -webkit-flex-direction: column-reverse; /* Safari 6.1+ */\n    flex-direction: column-reverse;\n}",
+				"domains": [
+					"connect.garmin.com"
+				]
+			}
+		],
+		"id": 6,
+		"updateDate": 1576779974504
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1546885725443,
+		"name": "instagram.com right-click-fix",
+		"sections": [
+			{
+				"code": "/* remove the div that prevents right-click-to-save-image */\n._9AhH0 {display: none !important;}\n\n/* remove the sign-up interstitial and scrollbar supression */\n.RnEpo {display: none !important;}\nbody {overflow:unset !important;}",
+				"domains": [
+					"instagram.com"
+				]
+			}
+		],
+		"id": 7,
+		"updateDate": 1570828764496
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1559926073857,
+		"name": "youtube.com",
+		"sections": [
+			{
+				"code": "/* Hide recommend overlays */\n.ytp-ce-covering-overlay {display: none !important;}\n.ytp-ce-element  {display: none !important;}\n.ytp-ce-video  {display: none !important;}\n",
+				"domains": [
+					"youtube.com"
+				]
+			}
+		],
+		"updateDate": 1559926136065,
+		"id": 8
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1569435630115,
+		"name": "pinterest.com",
+		"sections": [
+			{
+				"code": "/* Hide interstitial */\n[data-test-id=\"giftWrap\"] {\n  display:none;\n} \n\n[data-test-id=\"fullPageSignupModal\"] {\n  display:none;\n} \n\n\n/* re-enable scroll bar that interstitial tries to disable */\nbody {\n    overflow:unset !important;\n}",
+				"domains": [
+					"pinterest.com"
+				]
+			}
+		],
+		"updateDate": 1569436725972,
+		"id": 9
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1571357079972,
+		"name": "www.azurestandard.com - fix cart text size and more",
+		"sections": [
+			{
+				"code": ".OrderItem-flexInner:hover {\n    background:#f0f0f0 !important;\n}\n\n.OrderItems--insideModal .OrderItem-flexInner {\n    padding-left: 0px;\n    padding-right: 0px;\n    padding-top: 0px;\n    padding-bottom: 0px;\n    min-height: 45px;\n}\n\n.OrderItem-flexInner {\n    padding-top: 0px;\n    padding-bottom: 0px;\n    min-height: 45px;\n}\n\n.OrderItem-imageWrap {\n    width: 40px;\n    height: 40px;\n}\n\n._mb075 {\n    margin-bottom: 0px !important;\n}\n\n/* font-size: calc( 14px + 2 * (100vw - 320px) / 1180); */\n.OrderItem,\n.OrderItem-name,\n.OrderItem-price {\n    font-size: 11pt !important;\n    font-weight: normal !important;\n}\n\n\n._py075 {\n    padding: 0px !important;\n}\n\n.QuantityBtnGroup--inOrderItem .QuantityBtnGroup-btn {\n    font-size: 8pt;\n    height: 15px;\n    padding: 0.0rem 1.5rem;\n}\n\n.QuantityBtnGroup-btnRight {\n    margin-right: 20px !important;\n}\n\n\n\n/* === Now collapse each cart entry's two-rows into one row === */\n\n\n/* Name and Price Container: Float Left */\ndiv.OrderItem-content > div:nth-child(1) {\n    float: left;\n    width: 65%;\n}\n\n/* Right-align the price */\ndiv.OrderItem-content > div:nth-child(1) > div {\n    color: #419927 !important;\n    margin-left: auto !important;\n}\n\n/* Size and buttons Container: Float Right */\n/*\ndiv.OrderItem-content > div:nth-child(2) {    \n}\n*/\n/* Right-align the ID and size indicators */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) {\n    margin-left: auto !important;\n}\n\n/* Pad the size indicator a little on the right and turn it red */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(2) {\n    color: #ea1e1e !important;\n    padding-right: 20px;\n\n    float:right;\n    min-width: 8em;\n}\n\n\n/* == Try to fix the variable width columns of Size/Ordered/Shipped/Price == */\n\n/* Move the Ordered N field to the right of Shipped N */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(3) {\n    color:darkgrey !important;\n    font-size: 11pt !important;\n    float:right;\n    min-width: 4em;\n}\n/* Hide \"Ordered\" label */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(3) > .OrderItem-metaItemLabel{\n    display:none;\n}\n/* Add a seperator between Shipped N and Ordered N */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(3)::before {\n    content: \"/\\00a0\";\n}\n\n/* Set a min width for Shipped N (This gets moved to before Ordered N) */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(4) {\n    color:#3cac3c !important;\n    font-size: 11pt !important;\n    \n    float:right;\n    min-width: 5em;\n}\n\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(4) > span {\n    color:darkgrey !important;\n}\n\n/* Remove the Item code indicator */\ndiv.OrderItem-content > div:nth-child(2) > div:nth-child(1) > div > span:nth-child(1) {\n    display: none;\n}\n\n/* Hide \"Size\" label */\n.MetaItem-label {\n    display: none;\n}\n\n\n/* Try to make the right edge price a fixed width */\n.OrderItem-price {\n    padding-right: 10px;\n    min-width:4em;    \n    margin-right:0px;\n}\n._t-right {\n    padding-left: 0px !important;\n}\n",
+				"domains": [
+					"www.azurestandard.com"
+				]
+			}
+		],
+		"updateDate": 1576779992511,
+		"id": 10
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1571938285709,
+		"name": "volunteermatch.org",
+		"sections": [
+			{
+				"code": "/* Remove (disingenuous) \"login required\" interstitial */\n#req_login_reg_interrupt,\n#window_overlay {\n    display: none !important;\n}\n\n/* Remove fixed constraints on width */\n/*\n#content {\n    width: unset !important;\n    margin-left: 50px !important;\n    margin-right: 50px !important;\n}\n\n#sidebar {\n    float: left !important;\n    border: 5px dashed lightgreen !important;\n    width:25% !important\n}\n#maincolumn {\n    width: 70%;\n    margin-left: auto !important;\n    border: 5px dashed #0dc9ea !important;\n    \n    display: unset !important;\n    margin-right: 0px !important;\n    min-height: unset;    \n}\n\n.content_box_shadow_border {display:unset !important;}\n\n.searchitem {\n    width:30%;\n    border: 5px dashed #f03fef !important;}\n*/",
+				"domains": [
+					"volunteermatch.org"
+				]
+			}
+		],
+		"updateDate": 1571940533865,
+		"id": 11
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1576467176500,
+		"name": "jiffyshirts.com - popup larger",
+		"sections": [
+			{
+				"code": "/* Larger popup modal dialog */\n.modal-dialog { width: unset; margin:20px; }\n.color-selector-popup .modal-body { max-height: unset; height: calc(90vh - 53px);}\n\n/* Allow preview images to be full size */\n.color-variant-image { max-width: unset;  \n                       height:   unset; }\n                       \n.color-variant-selector { width: unset; }",
+				"domains": [
+					"jiffyshirts.com"
+				]
+			}
+		],
+		"updateDate": 1576467753532,
+		"id": 12
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1576779928487,
+		"name": "flickr.com - spaceball",
+		"sections": [
+			{
+				"code": "/* Remove div image */\n.spaceball {\n    display: none !important;    \n}\n",
+				"domains": [
+					"flickr.com"
+				]
+			}
+		],
+		"updateDate": 1576779934258,
+		"id": 13
+	}
+]
